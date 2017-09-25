@@ -1,2 +1,0 @@
-127.0.0.1 - - [22/Sep/2017:18:50:43 +0800] "GET /ws HTTP/1.1" 101 6 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"
-127.0.0.1 - - [22/Sep/2017:19:00:58 +0800] "GET /ws HTTP/1.1" 101 23 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36"
