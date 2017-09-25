@@ -1,4 +1,7 @@
-local semaphore = require "ngx.semaphore"
+local json = require("cjson")
+local redis = require("resty.redis")
+local semaphore = require("ngx.semaphore")
+local conf = require("config")
 
 local _M = { _VERSION = '0.01' }
 
@@ -8,17 +11,7 @@ local _messages = {}
 local _semaphores = {}
 local _incr_id = 0
 local _base_num = 100000
-local _shared_dicts = {
-    ngx.shared.message_1,
-    ngx.shared.message_2,
-    ngx.shared.message_3,
-    ngx.shared.message_4
-}
 
-local current_shared = _shared_dicts[ngx_worker_id + 1]
-local current_message_id = 0
-
-current_shared:set('id', 0)
 
 local function _gen_session_id()
     _incr_id = _incr_id + 1
@@ -71,30 +64,60 @@ function _M:destory(session_id)
     _semaphores[session_id] = nil
 end
 
-function _M:loop_message()
-    local message, session_id
-    local max_message_id, _ = current_shared:get("id")
-    while current_message_id < max_message_id do
-        current_message_id = current_message_id + 1
-        message, session_id = current_shared:get(_get_message_key(current_message_id))
-        if message then
-            _wake_up(session_id, message)
-            current_shared:delete(_get_message_key(current_message_id))
+local function message_handler(message)
+    local ok, data = pcall(json.decode, message)
+    if not ok then
+        return
+    end
+    
+    local session_id = data.session_id
+    local message = data.message
+    
+    if not session_id or not message then
+        return
+    end
+
+    _wake_up(session_id, message)
+end
+
+local function subscribe(conf)
+    local red = redis:new()
+    red:set_timeout(conf.timeout) -- 30 sec
+    local ok, err = red:connect(conf.host, conf.port)
+    if not ok then
+        ngx.log(ngx.ERR, "failed to connect redis: ", err)
+        return
+    end
+
+    local res, err = red:subscribe(conf.channel)
+    if not res then
+        ngx.log(ngx.ERR, "failed to sub redis: ", err)
+        return
+    end
+
+    while true do
+        local res, err = red:read_reply()
+        if res then
+            local message = res[3]
+            message_handler(message)
         else
-            ngx.log(ngx.ERR, 'Error message session: '..session_id..' message_id: '..current_message_id)
+            local ok, err = red:ping()
+            if not ok then
+                ngx.log(ngx.ERR, "failed to ping redis: ", err)
+                return
+            end
         end
     end
 end
 
-function _M:dispatch(session_id, message)
-    if _messages[session_id] then
-        _wake_up(session_id, message)
-    else
-        local shared_id = _get_shared_id(session_id)
-        local message_shared = _shared_dicts[shared_id]
-        local message_id = message_shared:incr("id", 1, 0)
-        message_shared:set(_get_message_key(message_id), message, 60, session_id)
+function _M.loop_message(premature)
+    while true do
+        subscribe(conf)
     end
+end
+
+function _M:dispatch(session_id, message)
+    _wake_up(session_id, message)
 end
 
 return _M

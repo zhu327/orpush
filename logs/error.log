@@ -1,0 +1,510 @@
+2017/09/22 18:48:19 [notice] 14696#0: using the "epoll" event method
+2017/09/22 18:48:19 [notice] 14696#0: openresty/1.11.2.4
+2017/09/22 18:48:19 [notice] 14696#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/22 18:48:19 [notice] 14696#0: OS: Linux 4.4.0-93-generic
+2017/09/22 18:48:19 [notice] 14696#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/22 18:48:19 [notice] 14697#0: start worker processes
+2017/09/22 18:48:19 [notice] 14697#0: start worker process 14698
+2017/09/22 18:48:19 [notice] 14697#0: start worker process 14699
+2017/09/22 18:48:19 [notice] 14697#0: start worker process 14700
+2017/09/22 18:48:19 [notice] 14697#0: start worker process 14702
+2017/09/22 18:48:19 [error] 14700#0: init_worker_by_lua_file error: /home/zhu327/Study/orpush/app/init_worker.lua:32: attempt to call global 'ngx_timer_at' (a nil value)
+stack traceback:
+	/home/zhu327/Study/orpush/app/init_worker.lua:32: in main chunk
+2017/09/22 18:48:19 [error] 14698#0: init_worker_by_lua_file error: /home/zhu327/Study/orpush/app/init_worker.lua:32: attempt to call global 'ngx_timer_at' (a nil value)
+stack traceback:
+	/home/zhu327/Study/orpush/app/init_worker.lua:32: in main chunk
+2017/09/22 18:48:19 [error] 14702#0: init_worker_by_lua_file error: /home/zhu327/Study/orpush/app/init_worker.lua:32: attempt to call global 'ngx_timer_at' (a nil value)
+stack traceback:
+	/home/zhu327/Study/orpush/app/init_worker.lua:32: in main chunk
+2017/09/22 18:48:19 [error] 14699#0: init_worker_by_lua_file error: /home/zhu327/Study/orpush/app/init_worker.lua:32: attempt to call global 'ngx_timer_at' (a nil value)
+stack traceback:
+	/home/zhu327/Study/orpush/app/init_worker.lua:32: in main chunk
+2017/09/22 18:48:33 [notice] 14735#0: signal process started
+2017/09/22 18:48:33 [notice] 14697#0: signal 15 (SIGTERM) received, exiting
+2017/09/22 18:48:33 [notice] 14699#0: exiting
+2017/09/22 18:48:33 [notice] 14698#0: exiting
+2017/09/22 18:48:33 [notice] 14700#0: exiting
+2017/09/22 18:48:33 [notice] 14702#0: exiting
+2017/09/22 18:48:33 [notice] 14698#0: exit
+2017/09/22 18:48:33 [notice] 14699#0: exit
+2017/09/22 18:48:33 [notice] 14702#0: exit
+2017/09/22 18:48:33 [notice] 14697#0: signal 17 (SIGCHLD) received
+2017/09/22 18:48:33 [notice] 14697#0: worker process 14698 exited with code 0
+2017/09/22 18:48:33 [notice] 14697#0: signal 29 (SIGIO) received
+2017/09/22 18:48:33 [notice] 14697#0: signal 17 (SIGCHLD) received
+2017/09/22 18:48:33 [notice] 14697#0: worker process 14702 exited with code 0
+2017/09/22 18:48:33 [notice] 14697#0: signal 29 (SIGIO) received
+2017/09/22 18:48:33 [notice] 14700#0: exit
+2017/09/22 18:48:33 [notice] 14697#0: signal 17 (SIGCHLD) received
+2017/09/22 18:48:33 [notice] 14697#0: worker process 14699 exited with code 0
+2017/09/22 18:48:33 [notice] 14697#0: signal 29 (SIGIO) received
+2017/09/22 18:48:33 [notice] 14697#0: signal 17 (SIGCHLD) received
+2017/09/22 18:48:33 [notice] 14697#0: worker process 14700 exited with code 0
+2017/09/22 18:48:33 [notice] 14697#0: exit
+2017/09/22 18:48:48 [notice] 14772#0: using the "epoll" event method
+2017/09/22 18:48:48 [notice] 14772#0: openresty/1.11.2.4
+2017/09/22 18:48:48 [notice] 14772#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/22 18:48:48 [notice] 14772#0: OS: Linux 4.4.0-93-generic
+2017/09/22 18:48:48 [notice] 14772#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/22 18:48:48 [notice] 14773#0: start worker processes
+2017/09/22 18:48:48 [notice] 14773#0: start worker process 14774
+2017/09/22 18:48:48 [notice] 14773#0: start worker process 14775
+2017/09/22 18:48:48 [notice] 14773#0: start worker process 14776
+2017/09/22 18:48:48 [notice] 14773#0: start worker process 14777
+2017/09/22 18:48:48 [error] 14775#0: *2 lua entry thread aborted: runtime error: /home/zhu327/Study/orpush//vendor/subscribe.lua:25: attempt to index global 'redis' (a nil value)
+stack traceback:
+coroutine 0:
+	/home/zhu327/Study/orpush//vendor/subscribe.lua: in function 'push'
+	/home/zhu327/Study/orpush/app/init_worker.lua:39: in function </home/zhu327/Study/orpush/app/init_worker.lua:32>, context: ngx.timer
+2017/09/22 18:48:48 [error] 14774#0: *5 lua entry thread aborted: runtime error: /home/zhu327/Study/orpush//vendor/subscribe.lua:25: attempt to index global 'redis' (a nil value)
+stack traceback:
+coroutine 0:
+	/home/zhu327/Study/orpush//vendor/subscribe.lua: in function 'push'
+	/home/zhu327/Study/orpush/app/init_worker.lua:39: in function </home/zhu327/Study/orpush/app/init_worker.lua:32>, context: ngx.timer
+2017/09/22 18:48:48 [error] 14776#0: *6 lua entry thread aborted: runtime error: /home/zhu327/Study/orpush//vendor/subscribe.lua:25: attempt to index global 'redis' (a nil value)
+stack traceback:
+coroutine 0:
+	/home/zhu327/Study/orpush//vendor/subscribe.lua: in function 'push'
+	/home/zhu327/Study/orpush/app/init_worker.lua:39: in function </home/zhu327/Study/orpush/app/init_worker.lua:32>, context: ngx.timer
+2017/09/22 18:48:48 [error] 14777#0: *8 lua entry thread aborted: runtime error: /home/zhu327/Study/orpush//vendor/subscribe.lua:25: attempt to index global 'redis' (a nil value)
+stack traceback:
+coroutine 0:
+	/home/zhu327/Study/orpush//vendor/subscribe.lua: in function 'push'
+	/home/zhu327/Study/orpush/app/init_worker.lua:39: in function </home/zhu327/Study/orpush/app/init_worker.lua:32>, context: ngx.timer
+2017/09/22 18:49:01 [notice] 14810#0: signal process started
+2017/09/22 18:49:01 [notice] 14773#0: signal 15 (SIGTERM) received, exiting
+2017/09/22 18:49:01 [notice] 14774#0: exiting
+2017/09/22 18:49:01 [notice] 14776#0: exiting
+2017/09/22 18:49:01 [notice] 14775#0: exiting
+2017/09/22 18:49:01 [notice] 14776#0: exit
+2017/09/22 18:49:01 [notice] 14775#0: exit
+2017/09/22 18:49:01 [notice] 14774#0: exit
+2017/09/22 18:49:01 [notice] 14777#0: exiting
+2017/09/22 18:49:01 [notice] 14777#0: exit
+2017/09/22 18:49:01 [notice] 14773#0: signal 17 (SIGCHLD) received
+2017/09/22 18:49:01 [notice] 14773#0: worker process 14774 exited with code 0
+2017/09/22 18:49:01 [notice] 14773#0: signal 29 (SIGIO) received
+2017/09/22 18:49:01 [notice] 14773#0: signal 17 (SIGCHLD) received
+2017/09/22 18:49:01 [notice] 14773#0: worker process 14776 exited with code 0
+2017/09/22 18:49:01 [notice] 14773#0: signal 29 (SIGIO) received
+2017/09/22 18:49:01 [notice] 14773#0: signal 17 (SIGCHLD) received
+2017/09/22 18:49:01 [notice] 14773#0: worker process 14775 exited with code 0
+2017/09/22 18:49:01 [notice] 14773#0: signal 29 (SIGIO) received
+2017/09/22 18:49:01 [notice] 14773#0: signal 17 (SIGCHLD) received
+2017/09/22 18:49:01 [notice] 14773#0: worker process 14777 exited with code 0
+2017/09/22 18:49:01 [notice] 14773#0: exit
+2017/09/22 18:49:24 [notice] 14870#0: using the "epoll" event method
+2017/09/22 18:49:24 [notice] 14870#0: openresty/1.11.2.4
+2017/09/22 18:49:24 [notice] 14870#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/22 18:49:24 [notice] 14870#0: OS: Linux 4.4.0-93-generic
+2017/09/22 18:49:24 [notice] 14870#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/22 18:49:24 [notice] 14871#0: start worker processes
+2017/09/22 18:49:24 [notice] 14871#0: start worker process 14872
+2017/09/22 18:49:24 [notice] 14871#0: start worker process 14873
+2017/09/22 18:49:24 [notice] 14871#0: start worker process 14874
+2017/09/22 18:49:24 [notice] 14871#0: start worker process 14876
+2017/09/22 18:49:36 [debug] 14872#0: *13 [lua] dispatcher.lua:52: gen_session_id(): new session: 100001
+2017/09/22 18:49:54 [error] 14876#0: *6 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:49:54 [error] 14874#0: *7 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:49:54 [error] 14873#0: *11 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:49:54 [error] 14872#0: *2 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:50:24 [error] 14874#0: *7 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:50:24 [error] 14876#0: *6 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:50:24 [error] 14873#0: *11 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:50:24 [error] 14872#0: *2 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:50:43 [debug] 14872#0: *13 [lua] web_socket.lua:61: close session: 1000011001
+2017/09/22 18:50:43 [debug] 14872#0: *13 [lua] dispatcher.lua:70: destory(): destory session: 100001
+2017/09/22 18:50:43 [info] 14872#0: *13 shutdown() failed (107: Transport endpoint is not connected), client: 127.0.0.1, server: , request: "GET /ws HTTP/1.1", host: "localhost:8080"
+2017/09/22 18:50:54 [error] 14876#0: *6 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:50:54 [error] 14874#0: *7 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:50:54 [error] 14873#0: *11 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:50:54 [error] 14872#0: *2 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:51:24 [error] 14876#0: *6 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:51:24 [error] 14874#0: *7 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:51:24 [error] 14873#0: *11 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:51:24 [error] 14872#0: *2 [lua] subscribe.lua:48: push(): failed to ping redis: ERR only (P)SUBSCRIBE / (P)UNSUBSCRIBE / QUIT allowed in this context, context: ngx.timer
+2017/09/22 18:51:36 [notice] 15049#0: signal process started
+2017/09/22 18:51:36 [notice] 14871#0: signal 15 (SIGTERM) received, exiting
+2017/09/22 18:51:36 [notice] 14872#0: exiting
+2017/09/22 18:51:36 [notice] 14873#0: exiting
+2017/09/22 18:51:36 [notice] 14876#0: exiting
+2017/09/22 18:51:36 [notice] 14873#0: exit
+2017/09/22 18:51:36 [notice] 14876#0: exit
+2017/09/22 18:51:36 [notice] 14872#0: exit
+2017/09/22 18:51:36 [notice] 14874#0: exiting
+2017/09/22 18:51:36 [notice] 14871#0: signal 17 (SIGCHLD) received
+2017/09/22 18:51:36 [notice] 14871#0: worker process 14873 exited with code 0
+2017/09/22 18:51:36 [notice] 14871#0: worker process 14876 exited with code 0
+2017/09/22 18:51:36 [notice] 14871#0: signal 29 (SIGIO) received
+2017/09/22 18:51:36 [notice] 14871#0: signal 17 (SIGCHLD) received
+2017/09/22 18:51:36 [notice] 14871#0: worker process 14872 exited with code 0
+2017/09/22 18:51:36 [notice] 14871#0: signal 29 (SIGIO) received
+2017/09/22 18:51:36 [notice] 14874#0: exit
+2017/09/22 18:51:36 [notice] 14871#0: signal 17 (SIGCHLD) received
+2017/09/22 18:51:36 [notice] 14871#0: worker process 14874 exited with code 0
+2017/09/22 18:51:36 [notice] 14871#0: exit
+2017/09/22 18:52:27 [notice] 15166#0: using the "epoll" event method
+2017/09/22 18:52:27 [notice] 15166#0: openresty/1.11.2.4
+2017/09/22 18:52:27 [notice] 15166#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/22 18:52:27 [notice] 15166#0: OS: Linux 4.4.0-93-generic
+2017/09/22 18:52:27 [notice] 15166#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/22 18:52:27 [notice] 15167#0: start worker processes
+2017/09/22 18:52:27 [notice] 15167#0: start worker process 15168
+2017/09/22 18:52:27 [notice] 15167#0: start worker process 15169
+2017/09/22 18:52:27 [notice] 15167#0: start worker process 15170
+2017/09/22 18:52:27 [notice] 15167#0: start worker process 15171
+2017/09/22 18:52:37 [debug] 15168#0: *13 [lua] dispatcher.lua:52: gen_session_id(): new session: 100001
+2017/09/22 18:52:57 [debug] 15170#0: *8 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:52:57 [debug] 15171#0: *6 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:52:57 [debug] 15169#0: *11 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:52:57 [debug] 15168#0: *2 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:53:27 [debug] 15170#0: *8 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:53:27 [debug] 15171#0: *6 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:53:27 [debug] 15169#0: *11 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:53:27 [debug] 15168#0: *2 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:53:57 [debug] 15170#0: *8 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:53:57 [debug] 15171#0: *6 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:53:57 [debug] 15169#0: *11 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:53:57 [debug] 15168#0: *2 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:54:44 [debug] 15170#0: *8 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:54:44 [debug] 15171#0: *6 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:54:44 [debug] 15169#0: *11 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:54:44 [debug] 15168#0: *2 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:55:14 [debug] 15170#0: *8 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:55:14 [debug] 15171#0: *6 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:55:14 [debug] 15169#0: *11 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:55:14 [debug] 15168#0: *2 [lua] subscribe.lua:46: push(): failed to read reply redis: timeout
+2017/09/22 18:55:25 [notice] 15414#0: signal process started
+2017/09/22 18:55:25 [notice] 15167#0: signal 15 (SIGTERM) received, exiting
+2017/09/22 18:55:25 [notice] 15171#0: exiting
+2017/09/22 18:55:25 [notice] 15168#0: exiting
+2017/09/22 18:55:25 [crit] 15168#0: in lua semaphore gc wait queue is not empty while the semaphore 00007FF188D71028 is being destroyed
+2017/09/22 18:55:25 [notice] 15171#0: exit
+2017/09/22 18:55:25 [notice] 15168#0: exit
+2017/09/22 18:55:25 [notice] 15167#0: signal 17 (SIGCHLD) received
+2017/09/22 18:55:25 [notice] 15167#0: worker process 15171 exited with code 0
+2017/09/22 18:55:25 [notice] 15167#0: signal 29 (SIGIO) received
+2017/09/22 18:55:25 [notice] 15167#0: signal 17 (SIGCHLD) received
+2017/09/22 18:55:25 [notice] 15169#0: exiting
+2017/09/22 18:55:25 [notice] 15167#0: worker process 15168 exited with code 0
+2017/09/22 18:55:25 [notice] 15167#0: signal 29 (SIGIO) received
+2017/09/22 18:55:25 [notice] 15170#0: exiting
+2017/09/22 18:55:25 [notice] 15170#0: exit
+2017/09/22 18:55:25 [notice] 15167#0: signal 17 (SIGCHLD) received
+2017/09/22 18:55:25 [notice] 15167#0: worker process 15170 exited with code 0
+2017/09/22 18:55:25 [notice] 15167#0: signal 29 (SIGIO) received
+2017/09/22 18:55:25 [notice] 15169#0: exit
+2017/09/22 18:55:25 [notice] 15167#0: signal 17 (SIGCHLD) received
+2017/09/22 18:55:25 [notice] 15167#0: worker process 15169 exited with code 0
+2017/09/22 18:55:25 [notice] 15167#0: exit
+2017/09/22 18:55:27 [notice] 15430#0: using the "epoll" event method
+2017/09/22 18:55:27 [notice] 15430#0: openresty/1.11.2.4
+2017/09/22 18:55:27 [notice] 15430#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/22 18:55:27 [notice] 15430#0: OS: Linux 4.4.0-93-generic
+2017/09/22 18:55:27 [notice] 15430#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/22 18:55:27 [notice] 15431#0: start worker processes
+2017/09/22 18:55:27 [notice] 15431#0: start worker process 15432
+2017/09/22 18:55:27 [notice] 15431#0: start worker process 15433
+2017/09/22 18:55:27 [notice] 15431#0: start worker process 15434
+2017/09/22 18:55:27 [notice] 15431#0: start worker process 15435
+2017/09/22 18:55:53 [debug] 15432#0: *2 [lua] subscribe.lua:44: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:55:53 [debug] 15434#0: *11 [lua] subscribe.lua:44: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:55:53 [debug] 15435#0: *8 [lua] subscribe.lua:44: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:55:53 [debug] 15433#0: *6 [lua] subscribe.lua:44: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:56:11 [debug] 15432#0: *13 [lua] dispatcher.lua:52: gen_session_id(): new session: 100001
+2017/09/22 18:57:08 [notice] 15601#0: signal process started
+2017/09/22 18:57:08 [notice] 15431#0: signal 15 (SIGTERM) received, exiting
+2017/09/22 18:57:08 [notice] 15432#0: exiting
+2017/09/22 18:57:08 [notice] 15433#0: exiting
+2017/09/22 18:57:08 [crit] 15432#0: in lua semaphore gc wait queue is not empty while the semaphore 00007F6087E38028 is being destroyed
+2017/09/22 18:57:08 [notice] 15433#0: exit
+2017/09/22 18:57:08 [notice] 15432#0: exit
+2017/09/22 18:57:08 [notice] 15434#0: exiting
+2017/09/22 18:57:08 [notice] 15435#0: exiting
+2017/09/22 18:57:08 [notice] 15435#0: exit
+2017/09/22 18:57:08 [notice] 15431#0: signal 17 (SIGCHLD) received
+2017/09/22 18:57:08 [notice] 15431#0: worker process 15433 exited with code 0
+2017/09/22 18:57:08 [notice] 15431#0: signal 29 (SIGIO) received
+2017/09/22 18:57:08 [notice] 15431#0: signal 17 (SIGCHLD) received
+2017/09/22 18:57:08 [notice] 15431#0: worker process 15432 exited with code 0
+2017/09/22 18:57:08 [notice] 15431#0: signal 29 (SIGIO) received
+2017/09/22 18:57:08 [notice] 15434#0: exit
+2017/09/22 18:57:08 [notice] 15431#0: signal 17 (SIGCHLD) received
+2017/09/22 18:57:08 [notice] 15431#0: worker process 15435 exited with code 0
+2017/09/22 18:57:08 [notice] 15431#0: signal 29 (SIGIO) received
+2017/09/22 18:57:08 [notice] 15431#0: signal 17 (SIGCHLD) received
+2017/09/22 18:57:08 [notice] 15431#0: worker process 15434 exited with code 0
+2017/09/22 18:57:08 [notice] 15431#0: exit
+2017/09/22 18:57:10 [notice] 15615#0: using the "epoll" event method
+2017/09/22 18:57:10 [notice] 15615#0: openresty/1.11.2.4
+2017/09/22 18:57:10 [notice] 15615#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/22 18:57:10 [notice] 15615#0: OS: Linux 4.4.0-93-generic
+2017/09/22 18:57:10 [notice] 15615#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/22 18:57:10 [notice] 15616#0: start worker processes
+2017/09/22 18:57:10 [notice] 15616#0: start worker process 15617
+2017/09/22 18:57:10 [notice] 15616#0: start worker process 15618
+2017/09/22 18:57:10 [notice] 15616#0: start worker process 15619
+2017/09/22 18:57:10 [notice] 15616#0: start worker process 15620
+2017/09/22 18:57:16 [debug] 15617#0: *13 [lua] dispatcher.lua:52: gen_session_id(): new session: 100001
+2017/09/22 18:57:32 [debug] 15617#0: *3 [lua] subscribe.lua:46: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:57:32 [debug] 15618#0: *9 [lua] subscribe.lua:46: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:57:32 [debug] 15620#0: *5 [lua] subscribe.lua:46: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:57:32 [debug] 15619#0: *11 [lua] subscribe.lua:46: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:58:18 [notice] 15700#0: signal process started
+2017/09/22 18:58:18 [notice] 15616#0: signal 15 (SIGTERM) received, exiting
+2017/09/22 18:58:18 [notice] 15618#0: exiting
+2017/09/22 18:58:18 [notice] 15617#0: exiting
+2017/09/22 18:58:18 [notice] 15619#0: exiting
+2017/09/22 18:58:18 [crit] 15617#0: in lua semaphore gc wait queue is not empty while the semaphore 00007FF53AA87028 is being destroyed
+2017/09/22 18:58:18 [notice] 15620#0: exiting
+2017/09/22 18:58:18 [notice] 15618#0: exit
+2017/09/22 18:58:18 [notice] 15617#0: exit
+2017/09/22 18:58:18 [notice] 15620#0: exit
+2017/09/22 18:58:18 [notice] 15616#0: signal 17 (SIGCHLD) received
+2017/09/22 18:58:18 [notice] 15616#0: worker process 15618 exited with code 0
+2017/09/22 18:58:18 [notice] 15616#0: signal 29 (SIGIO) received
+2017/09/22 18:58:18 [notice] 15616#0: signal 17 (SIGCHLD) received
+2017/09/22 18:58:18 [notice] 15616#0: worker process 15617 exited with code 0
+2017/09/22 18:58:18 [notice] 15616#0: worker process 15620 exited with code 0
+2017/09/22 18:58:18 [notice] 15616#0: signal 29 (SIGIO) received
+2017/09/22 18:58:18 [notice] 15619#0: exit
+2017/09/22 18:58:18 [notice] 15616#0: signal 17 (SIGCHLD) received
+2017/09/22 18:58:18 [notice] 15616#0: worker process 15619 exited with code 0
+2017/09/22 18:58:18 [notice] 15616#0: exit
+2017/09/22 18:58:21 [notice] 15714#0: using the "epoll" event method
+2017/09/22 18:58:21 [notice] 15714#0: openresty/1.11.2.4
+2017/09/22 18:58:21 [notice] 15714#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/22 18:58:21 [notice] 15714#0: OS: Linux 4.4.0-93-generic
+2017/09/22 18:58:21 [notice] 15714#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/22 18:58:21 [notice] 15715#0: start worker processes
+2017/09/22 18:58:21 [notice] 15715#0: start worker process 15716
+2017/09/22 18:58:21 [notice] 15715#0: start worker process 15717
+2017/09/22 18:58:21 [notice] 15715#0: start worker process 15718
+2017/09/22 18:58:21 [notice] 15715#0: start worker process 15719
+2017/09/22 18:58:26 [debug] 15718#0: *2 [lua] subscribe.lua:50: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:58:26 [debug] 15716#0: *10 [lua] subscribe.lua:50: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:58:26 [debug] 15719#0: *9 [lua] subscribe.lua:50: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:58:26 [debug] 15717#0: *5 [lua] subscribe.lua:50: push(): read reply redis: {"message": "Hello, World!", "session_id": 100001}
+2017/09/22 18:59:00 [notice] 15814#0: signal process started
+2017/09/22 18:59:00 [notice] 15715#0: signal 15 (SIGTERM) received, exiting
+2017/09/22 18:59:00 [notice] 15717#0: exiting
+2017/09/22 18:59:00 [notice] 15716#0: exiting
+2017/09/22 18:59:00 [notice] 15718#0: exiting
+2017/09/22 18:59:00 [notice] 15719#0: exiting
+2017/09/22 18:59:00 [notice] 15717#0: exit
+2017/09/22 18:59:00 [notice] 15716#0: exit
+2017/09/22 18:59:00 [notice] 15718#0: exit
+2017/09/22 18:59:00 [notice] 15715#0: signal 17 (SIGCHLD) received
+2017/09/22 18:59:00 [notice] 15715#0: worker process 15716 exited with code 0
+2017/09/22 18:59:00 [notice] 15715#0: worker process 15717 exited with code 0
+2017/09/22 18:59:00 [notice] 15715#0: worker process 15718 exited with code 0
+2017/09/22 18:59:00 [notice] 15715#0: signal 29 (SIGIO) received
+2017/09/22 18:59:00 [notice] 15715#0: signal 17 (SIGCHLD) received
+2017/09/22 18:59:00 [notice] 15719#0: exit
+2017/09/22 18:59:00 [notice] 15715#0: signal 17 (SIGCHLD) received
+2017/09/22 18:59:00 [notice] 15715#0: worker process 15719 exited with code 0
+2017/09/22 18:59:00 [notice] 15715#0: exit
+2017/09/22 18:59:02 [notice] 15828#0: using the "epoll" event method
+2017/09/22 18:59:02 [notice] 15828#0: openresty/1.11.2.4
+2017/09/22 18:59:02 [notice] 15828#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/22 18:59:02 [notice] 15828#0: OS: Linux 4.4.0-93-generic
+2017/09/22 18:59:02 [notice] 15828#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/22 18:59:02 [notice] 15829#0: start worker processes
+2017/09/22 18:59:02 [notice] 15829#0: start worker process 15830
+2017/09/22 18:59:02 [notice] 15829#0: start worker process 15831
+2017/09/22 18:59:02 [notice] 15829#0: start worker process 15832
+2017/09/22 18:59:02 [notice] 15829#0: start worker process 15833
+2017/09/22 18:59:17 [debug] 15831#0: *13 [lua] dispatcher.lua:52: gen_session_id(): new session: 200001
+2017/09/22 18:59:35 [debug] 15831#0: *2 [lua] subscribe.lua:46: push(): read reply redis: {"message": "Hello, World!", "session_id": 200001}
+2017/09/22 18:59:35 [debug] 15833#0: *6 [lua] subscribe.lua:46: push(): read reply redis: {"message": "Hello, World!", "session_id": 200001}
+2017/09/22 18:59:35 [debug] 15831#0: *2 [lua] subscribe.lua:22: message_handler(): dispatch: 200001
+2017/09/22 18:59:35 [debug] 15833#0: *6 [lua] subscribe.lua:22: message_handler(): dispatch: 200001
+2017/09/22 18:59:35 [debug] 15832#0: *8 [lua] subscribe.lua:46: push(): read reply redis: {"message": "Hello, World!", "session_id": 200001}
+2017/09/22 18:59:35 [debug] 15832#0: *8 [lua] subscribe.lua:22: message_handler(): dispatch: 200001
+2017/09/22 18:59:35 [debug] 15830#0: *11 [lua] subscribe.lua:46: push(): read reply redis: {"message": "Hello, World!", "session_id": 200001}
+2017/09/22 18:59:35 [debug] 15830#0: *11 [lua] subscribe.lua:22: message_handler(): dispatch: 200001
+2017/09/22 19:00:58 [debug] 15831#0: *13 [lua] web_socket.lua:61: close session: 2000011001
+2017/09/22 19:00:58 [debug] 15831#0: *13 [lua] dispatcher.lua:70: destory(): destory session: 200001
+2017/09/22 19:00:58 [info] 15831#0: *13 shutdown() failed (107: Transport endpoint is not connected), client: 127.0.0.1, server: , request: "GET /ws HTTP/1.1", host: "localhost:8080"
+2017/09/22 19:05:35 [notice] 16245#0: signal process started
+2017/09/22 19:05:35 [notice] 15829#0: signal 15 (SIGTERM) received, exiting
+2017/09/22 19:05:35 [notice] 15830#0: exiting
+2017/09/22 19:05:35 [notice] 15832#0: exiting
+2017/09/22 19:05:35 [notice] 15831#0: exiting
+2017/09/22 19:05:35 [notice] 15832#0: exit
+2017/09/22 19:05:35 [notice] 15831#0: exit
+2017/09/22 19:05:35 [notice] 15830#0: exit
+2017/09/22 19:05:35 [notice] 15829#0: signal 17 (SIGCHLD) received
+2017/09/22 19:05:35 [notice] 15833#0: exiting
+2017/09/22 19:05:35 [notice] 15829#0: worker process 15832 exited with code 0
+2017/09/22 19:05:35 [notice] 15829#0: signal 29 (SIGIO) received
+2017/09/22 19:05:35 [notice] 15829#0: signal 17 (SIGCHLD) received
+2017/09/22 19:05:35 [notice] 15829#0: worker process 15831 exited with code 0
+2017/09/22 19:05:35 [notice] 15829#0: signal 29 (SIGIO) received
+2017/09/22 19:05:35 [notice] 15829#0: signal 17 (SIGCHLD) received
+2017/09/22 19:05:35 [notice] 15829#0: worker process 15830 exited with code 0
+2017/09/22 19:05:35 [notice] 15829#0: signal 29 (SIGIO) received
+2017/09/22 19:05:35 [notice] 15833#0: exit
+2017/09/22 19:05:35 [notice] 15829#0: signal 17 (SIGCHLD) received
+2017/09/22 19:05:35 [notice] 15829#0: worker process 15833 exited with code 0
+2017/09/22 19:05:35 [notice] 15829#0: exit
+2017/09/25 10:13:28 [notice] 32063#0: using the "epoll" event method
+2017/09/25 10:13:28 [notice] 32063#0: openresty/1.11.2.4
+2017/09/25 10:13:28 [notice] 32063#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/25 10:13:28 [notice] 32063#0: OS: Linux 4.4.0-93-generic
+2017/09/25 10:13:28 [notice] 32063#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/25 10:13:28 [notice] 32064#0: start worker processes
+2017/09/25 10:13:28 [notice] 32064#0: start worker process 32065
+2017/09/25 10:13:28 [notice] 32064#0: start worker process 32066
+2017/09/25 10:13:28 [notice] 32064#0: start worker process 32068
+2017/09/25 10:13:28 [notice] 32064#0: start worker process 32069
+2017/09/25 10:13:28 [error] 32066#0: init_worker_by_lua_file error: error loading module 'subscribe' from file '/home/zhu327/Study/orpush//vendor/subscribe.lua':
+	/home/zhu327/Study/orpush//vendor/subscribe.lua:50: 'end' expected (to close 'function' at line 21) near '<eof>'
+stack traceback:
+	[C]: at 0x7f217dffb8a0
+	[C]: in function 'require'
+	/home/zhu327/Study/orpush//vendor/dispatcher.lua:3: in main chunk
+	[C]: in function 'require'
+	/home/zhu327/Study/orpush/app/init_worker.lua:4: in main chunk
+2017/09/25 10:13:28 [error] 32068#0: init_worker_by_lua_file error: error loading module 'subscribe' from file '/home/zhu327/Study/orpush//vendor/subscribe.lua':
+	/home/zhu327/Study/orpush//vendor/subscribe.lua:50: 'end' expected (to close 'function' at line 21) near '<eof>'
+stack traceback:
+	[C]: at 0x7f217dffb8a0
+	[C]: in function 'require'
+	/home/zhu327/Study/orpush//vendor/dispatcher.lua:3: in main chunk
+	[C]: in function 'require'
+	/home/zhu327/Study/orpush/app/init_worker.lua:4: in main chunk
+2017/09/25 10:13:28 [error] 32069#0: init_worker_by_lua_file error: error loading module 'subscribe' from file '/home/zhu327/Study/orpush//vendor/subscribe.lua':
+	/home/zhu327/Study/orpush//vendor/subscribe.lua:50: 'end' expected (to close 'function' at line 21) near '<eof>'
+stack traceback:
+	[C]: at 0x7f217dffb8a0
+	[C]: in function 'require'
+	/home/zhu327/Study/orpush//vendor/dispatcher.lua:3: in main chunk
+	[C]: in function 'require'
+	/home/zhu327/Study/orpush/app/init_worker.lua:4: in main chunk
+2017/09/25 10:13:28 [error] 32065#0: init_worker_by_lua_file error: error loading module 'subscribe' from file '/home/zhu327/Study/orpush//vendor/subscribe.lua':
+	/home/zhu327/Study/orpush//vendor/subscribe.lua:50: 'end' expected (to close 'function' at line 21) near '<eof>'
+stack traceback:
+	[C]: at 0x7f217dffb8a0
+	[C]: in function 'require'
+	/home/zhu327/Study/orpush//vendor/dispatcher.lua:3: in main chunk
+	[C]: in function 'require'
+	/home/zhu327/Study/orpush/app/init_worker.lua:4: in main chunk
+2017/09/25 10:14:10 [notice] 32132#0: signal process started
+2017/09/25 10:14:10 [notice] 32064#0: signal 15 (SIGTERM) received, exiting
+2017/09/25 10:14:10 [notice] 32065#0: exiting
+2017/09/25 10:14:10 [notice] 32066#0: exiting
+2017/09/25 10:14:10 [notice] 32065#0: exit
+2017/09/25 10:14:10 [notice] 32066#0: exit
+2017/09/25 10:14:10 [notice] 32064#0: signal 17 (SIGCHLD) received
+2017/09/25 10:14:10 [notice] 32064#0: worker process 32065 exited with code 0
+2017/09/25 10:14:10 [notice] 32068#0: exiting
+2017/09/25 10:14:10 [notice] 32064#0: worker process 32066 exited with code 0
+2017/09/25 10:14:10 [notice] 32064#0: signal 29 (SIGIO) received
+2017/09/25 10:14:10 [notice] 32064#0: signal 17 (SIGCHLD) received
+2017/09/25 10:14:10 [notice] 32068#0: exit
+2017/09/25 10:14:10 [notice] 32069#0: exiting
+2017/09/25 10:14:10 [notice] 32069#0: exit
+2017/09/25 10:14:10 [notice] 32064#0: signal 17 (SIGCHLD) received
+2017/09/25 10:14:10 [notice] 32064#0: worker process 32068 exited with code 0
+2017/09/25 10:14:10 [notice] 32064#0: signal 29 (SIGIO) received
+2017/09/25 10:14:10 [notice] 32064#0: signal 17 (SIGCHLD) received
+2017/09/25 10:14:10 [notice] 32064#0: worker process 32069 exited with code 0
+2017/09/25 10:14:10 [notice] 32064#0: exit
+2017/09/25 10:14:12 [notice] 32144#0: using the "epoll" event method
+2017/09/25 10:14:12 [notice] 32144#0: openresty/1.11.2.4
+2017/09/25 10:14:12 [notice] 32144#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/25 10:14:12 [notice] 32144#0: OS: Linux 4.4.0-93-generic
+2017/09/25 10:14:12 [notice] 32144#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/25 10:14:12 [notice] 32145#0: start worker processes
+2017/09/25 10:14:12 [notice] 32145#0: start worker process 32146
+2017/09/25 10:14:12 [notice] 32145#0: start worker process 32147
+2017/09/25 10:14:12 [notice] 32145#0: start worker process 32148
+2017/09/25 10:14:12 [notice] 32145#0: start worker process 32150
+2017/09/25 10:16:35 [debug] 32146#0: *13 [lua] dispatcher.lua:54: gen_session_id(): new session: 100001
+2017/09/25 10:18:44 [error] 32148#0: *11 lua entry thread aborted: runtime error: /home/zhu327/Study/orpush//vendor/subscribe.lua:18: attempt to index upvalue 'dispatcher' (a userdata value)
+stack traceback:
+coroutine 0:
+	/home/zhu327/Study/orpush//vendor/subscribe.lua: in function 'message_handler'
+	/home/zhu327/Study/orpush//vendor/subscribe.lua:40: in function 'subscribe'
+	/home/zhu327/Study/orpush//vendor/dispatcher.lua:79: in function </home/zhu327/Study/orpush//vendor/dispatcher.lua:77>, context: ngx.timer
+2017/09/25 10:18:44 [error] 32147#0: *8 lua entry thread aborted: runtime error: /home/zhu327/Study/orpush//vendor/subscribe.lua:18: attempt to index upvalue 'dispatcher' (a userdata value)
+stack traceback:
+coroutine 0:
+	/home/zhu327/Study/orpush//vendor/subscribe.lua: in function 'message_handler'
+	/home/zhu327/Study/orpush//vendor/subscribe.lua:40: in function 'subscribe'
+	/home/zhu327/Study/orpush//vendor/dispatcher.lua:79: in function </home/zhu327/Study/orpush//vendor/dispatcher.lua:77>, context: ngx.timer
+2017/09/25 10:18:44 [error] 32150#0: *6 lua entry thread aborted: runtime error: /home/zhu327/Study/orpush//vendor/subscribe.lua:18: attempt to index upvalue 'dispatcher' (a userdata value)
+stack traceback:
+coroutine 0:
+	/home/zhu327/Study/orpush//vendor/subscribe.lua: in function 'message_handler'
+	/home/zhu327/Study/orpush//vendor/subscribe.lua:40: in function 'subscribe'
+	/home/zhu327/Study/orpush//vendor/dispatcher.lua:79: in function </home/zhu327/Study/orpush//vendor/dispatcher.lua:77>, context: ngx.timer
+2017/09/25 10:18:44 [error] 32146#0: *3 lua entry thread aborted: runtime error: /home/zhu327/Study/orpush//vendor/subscribe.lua:18: attempt to index upvalue 'dispatcher' (a userdata value)
+stack traceback:
+coroutine 0:
+	/home/zhu327/Study/orpush//vendor/subscribe.lua: in function 'message_handler'
+	/home/zhu327/Study/orpush//vendor/subscribe.lua:40: in function 'subscribe'
+	/home/zhu327/Study/orpush//vendor/dispatcher.lua:79: in function </home/zhu327/Study/orpush//vendor/dispatcher.lua:77>, context: ngx.timer
+2017/09/25 10:21:08 [notice] 551#0: signal process started
+2017/09/25 10:21:08 [notice] 32145#0: signal 15 (SIGTERM) received, exiting
+2017/09/25 10:21:08 [notice] 32146#0: exiting
+2017/09/25 10:21:08 [notice] 32147#0: exiting
+2017/09/25 10:21:08 [crit] 32146#0: in lua semaphore gc wait queue is not empty while the semaphore 00007F2EC5A34028 is being destroyed
+2017/09/25 10:21:08 [notice] 32147#0: exit
+2017/09/25 10:21:08 [notice] 32146#0: exit
+2017/09/25 10:21:08 [notice] 32148#0: exiting
+2017/09/25 10:21:08 [notice] 32145#0: signal 17 (SIGCHLD) received
+2017/09/25 10:21:08 [notice] 32145#0: worker process 32147 exited with code 0
+2017/09/25 10:21:08 [notice] 32145#0: signal 29 (SIGIO) received
+2017/09/25 10:21:08 [notice] 32148#0: exit
+2017/09/25 10:21:08 [notice] 32145#0: signal 17 (SIGCHLD) received
+2017/09/25 10:21:08 [notice] 32145#0: worker process 32146 exited with code 0
+2017/09/25 10:21:08 [notice] 32145#0: signal 29 (SIGIO) received
+2017/09/25 10:21:08 [notice] 32145#0: signal 17 (SIGCHLD) received
+2017/09/25 10:21:08 [notice] 32145#0: worker process 32148 exited with code 0
+2017/09/25 10:21:08 [notice] 32150#0: exiting
+2017/09/25 10:21:08 [notice] 32150#0: exit
+2017/09/25 10:21:08 [notice] 32145#0: signal 29 (SIGIO) received
+2017/09/25 10:21:08 [notice] 32145#0: signal 17 (SIGCHLD) received
+2017/09/25 10:21:08 [notice] 32145#0: worker process 32150 exited with code 0
+2017/09/25 10:21:08 [notice] 32145#0: exit
+2017/09/25 10:25:41 [notice] 1018#0: using the "epoll" event method
+2017/09/25 10:25:41 [notice] 1018#0: openresty/1.11.2.4
+2017/09/25 10:25:41 [notice] 1018#0: built by gcc 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+2017/09/25 10:25:41 [notice] 1018#0: OS: Linux 4.4.0-93-generic
+2017/09/25 10:25:41 [notice] 1018#0: getrlimit(RLIMIT_NOFILE): 131072:131072
+2017/09/25 10:25:41 [notice] 1019#0: start worker processes
+2017/09/25 10:25:41 [notice] 1019#0: start worker process 1020
+2017/09/25 10:25:41 [notice] 1019#0: start worker process 1021
+2017/09/25 10:25:41 [notice] 1019#0: start worker process 1022
+2017/09/25 10:25:41 [notice] 1019#0: start worker process 1024
+2017/09/25 10:25:55 [debug] 1020#0: *13 [lua] dispatcher.lua:44: gen_session_id(): new session: 100001
+2017/09/25 10:26:03 [debug] 1022#0: *11 [lua] dispatcher.lua:34: _wake_up(): invalid session: 100001
+2017/09/25 10:26:03 [debug] 1021#0: *6 [lua] dispatcher.lua:34: _wake_up(): invalid session: 100001
+2017/09/25 10:26:03 [debug] 1024#0: *7 [lua] dispatcher.lua:34: _wake_up(): invalid session: 100001
+2017/09/25 10:26:28 [debug] 1022#0: *11 [lua] dispatcher.lua:34: _wake_up(): invalid session: 100001
+2017/09/25 10:26:28 [debug] 1021#0: *6 [lua] dispatcher.lua:34: _wake_up(): invalid session: 100001
+2017/09/25 10:26:28 [debug] 1024#0: *7 [lua] dispatcher.lua:34: _wake_up(): invalid session: 100001
+2017/09/25 10:26:39 [notice] 1146#0: signal process started
+2017/09/25 10:26:39 [notice] 1019#0: signal 15 (SIGTERM) received, exiting
+2017/09/25 10:26:39 [notice] 1021#0: exiting
+2017/09/25 10:26:39 [notice] 1020#0: exiting
+2017/09/25 10:26:39 [crit] 1020#0: in lua semaphore gc wait queue is not empty while the semaphore 00007F9AA364C028 is being destroyed
+2017/09/25 10:26:39 [notice] 1021#0: exit
+2017/09/25 10:26:39 [notice] 1020#0: exit
+2017/09/25 10:26:39 [notice] 1022#0: exiting
+2017/09/25 10:26:39 [notice] 1019#0: signal 17 (SIGCHLD) received
+2017/09/25 10:26:39 [notice] 1019#0: worker process 1021 exited with code 0
+2017/09/25 10:26:39 [notice] 1019#0: signal 29 (SIGIO) received
+2017/09/25 10:26:39 [notice] 1019#0: signal 17 (SIGCHLD) received
+2017/09/25 10:26:39 [notice] 1019#0: worker process 1020 exited with code 0
+2017/09/25 10:26:39 [notice] 1019#0: signal 29 (SIGIO) received
+2017/09/25 10:26:39 [notice] 1022#0: exit
+2017/09/25 10:26:39 [notice] 1024#0: exiting
+2017/09/25 10:26:39 [notice] 1024#0: exit
+2017/09/25 10:26:39 [notice] 1019#0: signal 17 (SIGCHLD) received
+2017/09/25 10:26:39 [notice] 1019#0: worker process 1022 exited with code 0
+2017/09/25 10:26:39 [notice] 1019#0: worker process 1024 exited with code 0
+2017/09/25 10:26:39 [notice] 1019#0: exit

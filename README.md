@@ -20,12 +20,13 @@ s.onmessage = function(v){
 
 ### 推送
 
-```shell
-curl -X POST \
-  http://localhost:8080/emitor \
-  -H 'content-type: application/json' \
-  -d '{
-    "session_id": 100001,
-    "message": "Hello, World!"
-}'
+```python
+import redis
+
+r = redis.Redis(host='localhost')
+r.publish('websocket', '{"message": "Hello, World!", "session_id": 100001}')
 ```
+
+### 依赖
+
+redis分支依赖于redis 2.8.17以上版本
