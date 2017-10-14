@@ -7,7 +7,7 @@ local config = require("config")
 
 local function loop_message()
     if premature then
-        ngx_log(ngx_ERR, "timer was shut: ", err)
+        ngx.log(ngx.ERR, "timer was shut: ", err)
         return
     end
 
